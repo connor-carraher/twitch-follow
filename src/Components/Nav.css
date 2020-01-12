@@ -1,0 +1,19 @@
+.Nav {
+  background-color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.Nav button {
+  float: left;
+}
+
+.Nav img {
+  height: 4vh;
+}
+
+.Nav p {
+  color: black;
+  display: inline;
+}

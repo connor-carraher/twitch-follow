@@ -1,23 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import StreamerList from "./Components/StreamerList";
+import Nav from "./Components/Nav";
+import UsernameInput from "./Components/UsernameInput";
 
 function App() {
-  return (
+  const [username, setUsername] = useState("");
+
+  return username ? (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Nav username={username} setUsername={setUsername} />
+        <StreamerList username={username} />
+      </header>
+    </div>
+  ) : (
+    <div className="App">
+      <header className="App-header">
+        <UsernameInput setUsername={setUsername} />
       </header>
     </div>
   );

@@ -1,0 +1,9 @@
+.StreamerList {
+  display: flex;
+  background: black;
+  margin: 1%;
+  min-width: 80%;
+  min-height: 20vh;
+  border-radius: 5%;
+  padding: 10px;
+}
