@@ -1,0 +1,50 @@
+.Nav {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+
+  button {
+    float: left;
+  }
+
+  img {
+    height: 4vh;
+  }
+
+  p {
+    color: #fff;
+    display: inline;
+  }
+  
+  .arrow-round {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 10px auto;
+    background-color: #6441a5;
+
+    border: 5px solid #fff;
+    border-radius: 50%;
+    border-right-color: transparent;
+  }
+
+  .arrow-round::after {
+    content: "";
+    position: absolute;
+
+    border: 10px solid #6441a5;
+    top: -5px; 
+    left: 5px;
+
+    border-bottom-color: #fff;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-color: transparent;
+  }
+
+  .redo-btn {
+    background-color: #6441a5;
+    border: #6441a5;
+  }
+}
+
