@@ -1,9 +1,9 @@
 .username-input > img {
-        width: 50%;
+  width: 50%;
 }
 
 $primary: #fff;
-$secondary: #8E48FF;
+$secondary: #8e48ff;
 $white: #fff;
 
 .form__group {
@@ -25,6 +25,7 @@ $white: #fff;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
+  z-index: 2;
 
   &::placeholder {
     color: transparent;
@@ -44,6 +45,7 @@ $white: #fff;
   transition: 0.2s;
   font-size: 1rem;
   color: $white;
+  z-index: 1;
 }
 
 .form__field:focus {
@@ -54,17 +56,21 @@ $white: #fff;
     transition: 0.2s;
     font-size: 1rem;
     color: $primary;
-    font-weight:700;    
+    font-weight: 700;
   }
-  padding-bottom: 6px;  
+  padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image: linear-gradient(to right, $primary, $secondary);
   border-image-slice: 1;
+  z-index: 2;
 }
 /* reset input */
-.form__field{
-  &:required,&:invalid { box-shadow:none; }
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
 }
 
 .brk-btn {
@@ -111,15 +117,14 @@ $white: #fff;
   }
 }
 
-
 /* demo */
 body {
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font-size: 1.5rem;
-  background-color:#222222;
+  background-color: #222222;
 }
