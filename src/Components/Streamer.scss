@@ -1,0 +1,30 @@
+.card {
+  color: #6441a5;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: 16vw;
+  width: 19vw;
+  transition: 0.3s;
+  background-image: url('../public/profile_pic.jpg');
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  } 
+
+  .folded-content {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .unfolded-content {
+    display: none;
+  }
+}

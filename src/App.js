@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 import StreamerList from "./Components/StreamerList";
 import Nav from "./Components/Nav";
 import UsernameInput from "./Components/UsernameInput";
@@ -9,9 +9,11 @@ function App() {
 
   return username ? (
     <div className="App">
-      <header className="App-header">
+      <header className="">
         <Nav username={username} setUsername={setUsername} />
-        <StreamerList username={username} />
+        <div className="Streamer-list">
+          <StreamerList username={username} />
+        </div>
       </header>
     </div>
   ) : (

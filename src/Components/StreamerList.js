@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Streamer from "./Streamer.js";
-import "./StreamerList.css";
+import "./StreamerList.scss";
 
 export default function StreamerList({ username }) {
   const [streamerList, setStreamerList] = useState([]);
@@ -36,7 +36,7 @@ export default function StreamerList({ username }) {
 
   return isLoaded ? (
     streamerList.map(item => (
-      <li className="StreamerList">
+      <li className="Streamer">
         <Streamer streamer={item} />
       </li>
     ))
