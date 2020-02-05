@@ -2,29 +2,80 @@
   color: #6441a5;
   align-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  height: 16vw;
-  width: 19vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 28vh;
+  width: 18.75vw;
   transition: 0.3s;
-  background-image: url('../public/profile_pic.jpg');
+  background-image: url("../public/profile_pic.jpg");
+  background-position: center;
   position: relative;
+  border-radius: 5px;
+  border: solid #c1afdb;
+  border-width: 0.125vw;
 
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  } 
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 
   .folded-content {
     background-color: #ffffff;
     position: absolute;
     bottom: 0;
-    width: 90%;
-    font-size: 1.5rem;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 100%;
+    display: flex;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 800;
+
+    .icon {
+      flex-basis: 20%;
+      text-align: right;
+    }
+
+    .text {
+      flex-basis: 80%;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .text .below {
+      font-weight: 400;
+      height: 0;
+    }
+
+    .transform {
+      transition: all 2s ease;
+    }
   }
 
-  .unfolded-content {
-    display: none;
-  }
+  // .unfolded-content {
+  //   background-color: #ffffff;
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 100%;
+  //   display: flex;
+  //   border-bottom-right-radius: 5px;
+  //   border-bottom-left-radius: 5px;
+  //   font-size: 1.25rem;
+  //   height: 55%;
+
+  //   .icon {
+  //     flex-basis: 20%;
+  //     text-align: right;
+  //   }
+
+  //   .text {
+  //     flex-basis: 80%;
+  //     text-align: left;
+  //     overflow: hidden;
+  //     text-overflow: ellipsis;
+
+  //     .streamer-text {
+  //       font-weight: 800;
+  //       padding-bottom: 1rem;
+  //     }
+  //   }
+  // }
 }

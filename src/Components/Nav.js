@@ -10,7 +10,7 @@ export default function Nav({ username, setUsername }) {
           <div class="arrow-round" />
         </div>
       </button>
-      <p>Seeing following ages for: {username}</p>
+      <p>FOLLOWING AGES FOR: {username}</p>
     </div>
   );
 }
